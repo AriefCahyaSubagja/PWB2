@@ -1,0 +1,244 @@
+/* ===== Variabel Warna Gelap ===== */
+:root {
+  --bg-page: #000;
+  --bg-container: #0d0d0f;
+  --text-primary: #f1f1f1;
+  --muted: #9aa7c0;
+  --accent-1: #4f6ef7;
+  --accent-2: #8a6de0;
+  --navbar-height: 64px;
+}
+
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.8;
+  padding: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  z-index: 1000;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+}
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+.btn-nav {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-nav:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===== Kontainer ===== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: calc(var(--navbar-height) + 40px) 20px 40px;
+  background: var(--bg-container);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Heading ===== */
+h1, h2 {
+  text-align: center;
+}
+h1 {
+  color: var(--accent-1);
+  margin-bottom: 20px;
+}
+h2 {
+  color: var(--accent-2);
+  margin: 30px 0 10px;
+}
+
+/* ===== Profil ===== */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-1);
+}
+
+/* ===== Blockquote ===== */
+blockquote {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid var(--accent-2);
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  width: 80%;
+  color: var(--muted);
+}
+
+/* ===== Tabel ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background: var(--accent-1);
+  color: #fff;
+}
+
+/* ===== Hobi ===== */
+.hobi-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+.hobi-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.hobi-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+.hobi-item img {
+  width: 100%;
+  max-width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* ===== Lagu Favorit ===== */
+.audio-center {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+audio {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ===== Video ===== */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* ===== Ikuti Saya (Social Links) ===== */
+.social-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.social-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  width: 200px;
+  height: 160px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.social-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-1);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.social-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Warna aksen khusus */
+.social-card.instagram {
+  border-color: #e1306c;
+}
+
+.social-card.github {
+  border-color: #6e5494;
+}
