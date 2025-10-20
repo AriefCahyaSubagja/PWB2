@@ -287,12 +287,16 @@ audio {
 .social-card.github {
   border-color: #6e5494;
 }
-.theme-selector {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 40px 0;
+
+/* 🎥 YouTube */
+.social-card.youtube {
+  border-color: #ff0000; /* warna khas YouTube */
 }
+
+.social-card.youtube:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
 
 .theme-btn {
   width: 30px;
